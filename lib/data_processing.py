@@ -9,18 +9,16 @@ students = [
 ]
 
 def format_student_data(student):
-    return f"ID: {student[0]} | Name: {student[1]} | Major: {student[2]}"
+    print(f"ID: {student[0]} | Name: {student[1]} | Major: {student[2]}")
 
 def display_students(student_list):
     if student_list:
         for student in student_list:
-            print(format_student_data(student))
+            format_student_data(student)
     else: 
         print("No student list found")
 
-    """
-    Display all student records.
-    Loop through the student_list and print each student using format_student_data().
-    """
-    
+    # Display all student records.
+    # Loop through the student_list and print each student using format_student_data().
+
 display_students(students)

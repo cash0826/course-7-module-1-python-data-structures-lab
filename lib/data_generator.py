@@ -8,23 +8,18 @@ students = [
     (105, "Eve Lewis", "Mathematics"),
 ]
 
-"""
-Generate student records filtered by major lazily for memory efficiency
-using a Python generator.
+# Generate next student record filtered by major lazily for memory efficiency
+# using a Python generator.
 
-Args:
-    student_list: List of student tuples (id, name, major)
-    major: Major to filter by (case-insensitive)
+# Args:
+#     student_list: List of student tuples (id, name, major)
+#     major: Major to filter by (case-insensitive)
     
-Yields:
-    Student tuples matching the given major
-"""
+# Yields:
+#     List of Student tuples matching the given major
     
 def student_generator(student_list, major):
-    return (student for student in student_list 
-            if student[2].lower() == major.lower())
+     return [student for student in student_list 
+            if student[2].lower() == major.lower()]
 
-students_by_major = student_generator(students, "mathematics")
-
-for student in students_by_major:
-    print(student)
+print(student_generator(students, "Mathematics"))
