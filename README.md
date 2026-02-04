@@ -64,7 +64,7 @@ In `data_processing.py`, the `format_student_data` function returns a string for
 Also in `data_processing.py`, the `display_students` function loops through all students and print each student's
 details using the `format_student_data` function.
 
-#### Step 5: Updating Student Courses Using Set Operations
+#### 5: Updating Student Courses Using Set Operations
 
 In `set_operations.py`, the `unique_majors` function returns a set of unique student majors using set comprehension. For example, given a list of students like:
 ```python
@@ -81,7 +81,7 @@ the `unique_majors` function should return (in no particular order):
 {"Mathematics", "Physics"}
 ```
 
-#### Step 6: Create a Student List Generator by Major
+#### 6: Student List Generator by Major
 
 In `data_generator.py`, the `student_generator` function returns a generator expression
 for all students by major. Example of a generator expression:
